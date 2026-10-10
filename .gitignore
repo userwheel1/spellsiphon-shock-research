@@ -1,0 +1,42 @@
+# Generated texture builds.
+# These are reproducible with `python tools/build_no_aura.py` and
+# `python tools/make_texture_fix.py`, and they dominate the repository size.
+# The released archive is kept under dist-nexus/.
+dist-tex/Spellsiphon - Soft Shock Textures (light)/
+dist-tex/Spellsiphon - Soft Shock Textures (medium)/
+dist-tex/Spellsiphon - Soft Shock Textures (strong)/
+dist-tex/Spellsiphon - Shock Test (transparent)/
+dist-tex/Spellsiphon - No Static Aura (medium)/
+
+# Loose texture output from make_texture_fix.py
+dist-tex/textures/
+
+# Superseded plugin experiments (rebuildable with tools/build_patch.py and
+# tools/build_effect_patch.py)
+dist-effect/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Scratch / research artefacts
+research/
+*.log
+*.bak
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# All generated mod folders/archives (the release is under dist-nexus/)
+dist-tex/
+
+# Development screenshots; the texture comparison sheet is the one that matters
+docs/images/after.png
+docs/images/before.png
+docs/images/before-after.png
